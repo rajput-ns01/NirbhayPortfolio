@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirbhay's Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- Include GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="top-section">
+            <div class="left-section">
+                <div>Nirbhay's Portfolio</div>
+            </div>
+            <div class="right-section">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="section1" id="intro-text">
+                <div>Hii, my name is <span id="purple">Nirbhay</span></div>
+                <div><div>and I am a passionate</div> <span id="element"></span></div>
+                <a href="https://github.com/rajput-ns01" class="btn">Visit GitHub</a>
+                <div class="buttons">
+                    <a href="Nirbhay singh Resume.pdf" download="Nirbhay_Resume.pdf">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="section2">
+                <img src="bg2.webp" id="background-image">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Full Stack Developer', 'Backend Developer'],
+            typeSpeed: 50,
+        });
+
+        // GSAP animation for the intro text
+        gsap.to("#intro-text", { opacity: 1, y: 0, duration: 1, delay: 0.5 });
+
+        
+        
+    </script>
+</body>
+</html>

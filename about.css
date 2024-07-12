@@ -1,0 +1,307 @@
+/* General Styles */
+body {
+    background-color: #f2f2f2; 
+    color: #333; 
+    font-family: sans-serif;
+    margin-left: 10px;
+    padding: 0;
+}
+
+button {
+    background: #1e2167; 
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+/* Header Styles */
+.top-section {
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: #333;
+    min-height: 60px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.left-section,
+.right-section {
+    color: #fff; 
+}
+
+.right-section ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; 
+}
+
+.right-section ul li {
+    list-style: none;
+    margin-left: 75px;
+}
+
+.right-section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.right-section ul li a:hover {
+    color: #36b;
+}
+
+/* About Section Styles */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.photo-section {
+    width: 30%;
+}
+
+.photo-section img {
+    max-height: 550px;
+    border: none;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-section {
+    width: 70%;
+    padding-left: 10px;
+    margin-top: -60px;
+}
+
+.text-section h4 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.text-section .main-text {
+    color: #1a1aff; 
+}
+
+.text-section .main-text h6 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.text-section .main-text p {
+    margin-bottom: 15px;
+    margin-top: -5px;
+    line-height: 1.5;
+}
+
+/* Horizontal Rule */
+hr {
+    margin-top: 40px;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+/* CSS for Skills Section */
+
+.skills-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.skills {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.skills ul li:hover {
+    background-color: #45a049;
+}
+
+
+/* CSS for Third Section (Education) */
+
+.third-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.education {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.edu-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.edu-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edu-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.edu-details h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.edu-details p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+
+/* CSS for Certifications Section */
+.certifications-section {
+    background-color: #f9f9f9; 
+    padding: 50px 0;
+}
+
+.certifications {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cert-heading {
+    font-size: 2rem;
+    color: #333; 
+    margin-bottom: 30px;
+}
+
+.cert-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cert-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cert-item p {
+    font-size: 1rem;
+    color: #777; 
+    margin-bottom: 5px;
+}
+
+.cert-item button {
+    background-color: #4CAF50; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cert-item button:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries for Responsive Vertical Title */
+@media screen and (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        height: auto; 
+        align-items: flex-start;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+
+    .right-section ul {
+        justify-content: space-evenly;
+    }
+
+    .right-section ul li {
+        margin-left: 10px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .photo-section {
+        width: 100%; 
+        margin-bottom: 50px; 
+        margin-top: -50px;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .text-section h4 {
+        font-size: 1.5rem;
+    }
+
+    .text-section .main-text h6,
+    .text-section .main-text p {
+        font-size: 1rem; 
+    }
+}

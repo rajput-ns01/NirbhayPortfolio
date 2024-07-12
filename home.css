@@ -1,0 +1,107 @@
+
+        body {
+            background-color: #f2f2f2; 
+            color: #333;
+            font-family: Arial, sans-serif; 
+        }
+        .top-section {
+            display: flex;
+            flex-direction: column;
+            background-color: #333;
+            justify-content: center;
+            min-height: 60px;
+            align-items: center;
+            padding: 0; 
+        }
+        .left-section,
+        .right-section {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .right-section ul {
+            display: flex;
+            margin: 0;
+            padding: 0 5px;
+            justify-content: space-evenly;
+        }
+        .right-section ul li {
+            list-style: none;
+            margin-left: 20px; 
+            margin-right:10px
+        }
+        .right-section ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        .right-section ul li a:hover {
+            color: #54a1ff;
+        }
+        .first-section {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+            align-items: center;
+            margin: 40px 0;
+        }
+        .section1,
+        .section2 {
+            max-width: 100%;
+            text-align: center; 
+        }
+        .section1 {
+            font-size: 3rem;
+            position: relative;
+            color: #333; 
+            padding: 20px;
+        }
+        .section1 #purple {
+            color: #800080; 
+        }
+        .section1 .btn {
+            padding: 12px 24px; 
+            background: #333;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .section2 img {
+            max-width: 100%; 
+            height: auto; 
+            margin-top: 20px;
+        }
+        #element {
+            color: #800080;
+        }
+        /* Media Queries for responsiveness */
+        @media screen and (min-width: 1024px) {
+            .top-section {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .right-section ul li {
+                margin-left: 75px;
+                 margin-top: 20px;
+            }
+            .left-section div{
+                margin-top: 20px;
+            }
+          
+            .section1 {
+                max-width: 50%;
+                justify-content: space-evenly;
+                margin-left: -50px;
+            }
+            .section2 {
+                max-width: 50%;
+            }
+            .section2 img {
+                max-height: 500px;
+            }
+        }
+
+a{
+    text-decoration: none;
+}
